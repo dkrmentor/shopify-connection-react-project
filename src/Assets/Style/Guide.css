@@ -1,0 +1,134 @@
+.guides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guides .guide-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 10px;
+}
+
+.guides .guide-container .article-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.guides .guide-container .article-list li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guides .guide-container .article-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.guides .guide-container .article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-width: 40%;
+    margin: 10px;
+}
+
+.guides .guide-container .article-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.guides .guide-container .article-excerpt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.guides .guide-container .article-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guides .guide-container .article-header {
+    width: 100%;
+    max-width: 800px;
+}
+
+.guides .guide-container .article-header .article-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.guides .guide-container .article-header .article-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.guides .guide-container .article-header .article-excerpt {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.guides .guide-container .article-content {
+    width: 100%;
+    max-width: 800px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+
+
+/* //first-child */
+
+.guides .guide-container .article-list li:first-child {
+    max-width: 800px;
+}
+
+.guides .guide-container .article-list li:first-child .article-container {
+    flex-direction: column;
+}
+
+
+
+.guides .guide-container .article-list li:first-child .article-image {
+    max-width: 100%
+}
+
+
+@media (max-width:800px) {
+    .guides .guide-container .article-list {
+        max-width: 800px;
+    }
+
+    .guides .guide-container .article-list .article-container {
+        flex-direction: column;
+    }
+
+
+
+    .guides .guide-container .article-list .article-image {
+        max-width: 100%
+    }
+}

@@ -31,3 +31,21 @@ export const getArticles = () => {
 
   return axios.post(API_URL, { query }, { headers }).then((res) => res.data.data.articles.edges);
 };
+
+
+// // // api.js
+
+// import axios from "axios";
+
+// const API_URL = "https://staging-store-connected-with-react.myshopify.com/admin/api/2023-03";
+// const ACCESS_TOKEN = "1e3251c451e619a4e6a7d25152bf6711";
+
+// export const getArticles = () => {
+//   const headers = {
+//     "X-Shopify-Access-Token": ACCESS_TOKEN,
+//   };
+
+//   return axios.get(`${API_URL}/articles.json`, { headers })
+//     .then((res) => res.data.articles);
+// };
+
